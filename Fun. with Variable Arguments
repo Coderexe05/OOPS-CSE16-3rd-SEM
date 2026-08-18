@@ -1,0 +1,57 @@
+OOPS
+design a program to convert a procedural implementation of a student record system into an object oriented using class and object
+
+Develop a  program to demonstrate parameter passing tech call by value call by reference and address and analyse there affect on variable modification
+
+
+rafc
+
+
+
+
+
+A varadic function is a function that accept a variable no. of arguments 
+we create the varadic funt 
+the micros are 
+A--Va_list - this is a type of representing a variable argument list it is typically used to declaire the list of argument within a funt.
+B--Va_start - it takes two argument 
+1- argument Va+list 
+2- argument reference to the function last parameter it must be called before accessing the variable argument Va_star(arg,num)
+C--Va_arg-- it takes two argument 
+1- Argument Va list argument type of the next argument this micros retrieve the next argument from the variable argument list. it expend to the next variable argument and has the specified type   #syntax- Va_arg(arg,int)
+D--Va_end()--It takes one argument it serves to clean up if one Va #syntax Va_end(Va_list arg)
+
+
+Varadic function can be called with the defferent numbers of argument each time enoked.
+it is used in sum of no. or maximum or minimum to find.
+The last argument 1 on the right and ellipses (...) indicating variable no. of arguments 
+CAST DARS-- header file name
+ 
+#include<iostrem>
+#include<cstdarg>
+using namespace std;
+
+int main(int count,...){
+va_list arg;
+va_start(arg, count);
+int result  = 0;
+for(int i = 0; i <count; i==){
+result += va_arg(arg, int);
+}
+return result;
+}
+int main(){
+cout<<sum(3,10,20,30);
+return 0;
+}
+
+
+Auto Keyword--
+Introduced in c++11 
+Auto keyword let the compiler automatically determine the data type of a variable based on the value assigned to it.
+It helps in creating shorter and radiable code
+It is a type detection technique.
+Reduce typing 
+Automatically select the correct data type.               
+# Range Based Loops: used to access evety element of an array or container without using an index.
+  ->syntax: for(data-type variable : container)
