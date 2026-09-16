@@ -1,0 +1,5 @@
+ #Class members are (variable and functions) are accessed using three primary operators depending on how the object is
+  initiated and referenced.
+  ->Dot(.): object member (direct access via onject and references).
+  ->pointer->member(access via apointer to an object).
+  ->Scope Resolution(::): Accessing static members or scope hidden members.
